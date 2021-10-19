@@ -1,6 +1,6 @@
 # group-1-project
 
-##Group Members
+## Group Members
 
 1. Alex Snyder
 2. Jonacin Pierre-Louis
