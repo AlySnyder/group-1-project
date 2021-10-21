@@ -1,8 +1,38 @@
-.card-text {
-    color: white;
+• {
+    margin: 0;
+    padding: 0;
+}
+body {
+   background-image: url("../images/bartender-pouring-alcoholic-drink-measuring-260nw-1454692292.jpg.png");
+   background-size: cover;
+   position:absolute;
+}
+.logo {
+    align-items: center;
+    font-size:xx-large;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    text-align: center;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+     }
+.buttonBox {
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+        text-align: center;
+        height: 10em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         }
+.button {
+    position: absolute;
+    align-content: center;
+    padding-top: 150px;
+    margin-left: 500px;
 }
 
-.card-title {
-    color: white;
-}
 
