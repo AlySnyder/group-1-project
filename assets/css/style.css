@@ -35,4 +35,13 @@ body {
     margin-left: 500px;
 }
 
-
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box div {
+    width: 100px;
+    height: 100px;
+  }
