@@ -1,0 +1,27 @@
+html {
+    background: url(../images/food.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+ 
+ .box {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     flex-direction: column;
+     size: 100px;
+   }
+   
+   .box div {
+     width: 100px;
+     height: 100px;
+   }
+ 
+ .input {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     flex-direction: column;
+     size: 100px;
+ }

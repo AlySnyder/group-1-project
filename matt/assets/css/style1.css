@@ -1,0 +1,102 @@
+body  {
+    background-image: url("https://images.pexels.com/photos/1484516/pexels-photo-1484516.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-color: #cccccc;
+    background-size: cover;
+  }
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    size: 100px;
+  }
+
+ 
+  
+  /* .box div a h1 {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 25px;
+  }
+
+  .box h1 {
+      font-size: 80px;
+      color: orange;
+      text-shadow: 2px 4px black;
+      font-family: Arial, Helvetica, sans-serif;
+  } */
+
+
+  
+
+  .box h2 {
+    font-size: 35px;
+    color: white;
+    border-bottom: 1px solid red ;
+}
+
+.button-wrap {
+    width: 400px;
+
+}
+
+
+.navbar-nav {
+  justify-content: end;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+}
+
+.drinkButton .foodButton {
+display: flex;
+justify-content: center;
+
+}
+
+
+.container {
+
+  padding-top: 120px;
+  
+}
+
+
+.container h1 {
+  font-size: 80px;
+  /* border: solid white 2px; */
+  text-shadow: 5px 5px #fcc201;
+
+}
+
+.text1 {
+  font-size: 80px;
+  /* border: solid white 2px; */
+  text-shadow: 5px 5px #fcc201;
+  
+}
+
+.text2 {
+  font-size: 30px;
+  /* border: solid white 2px; */
+  /* text-shadow: 5px 5px #fcc201; */
+  padding-top: 35px;
+  margin-left: 150px;
+  
+}
+
+.container2 {
+margin-left: 240px;
+  padding-left: 100px;
+}
+
+
