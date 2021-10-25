@@ -1,0 +1,46 @@
+/* body {
+    background-image: url("../images/bartender-pouring-alcoholic-drink-measuring-260nw-1454692292.jpg.png");
+    background-size: cover;
+ } */
+
+ body {
+   background: url(../images/bar.jpg) no-repeat center center fixed;
+   background-size: cover;
+ }
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    size: 100px;
+  }
+  
+  .box div {
+    width: 100px;
+    height: 100px;
+  }
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    size: 100px;
+}
+
+nav {
+  justify-content: center;
+}
+
+form {
+  background-color: #4654e1;
+  width: 300px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
