@@ -1,0 +1,101 @@
+
+/* food */
+var button_foodRandom=document.querySelector("#foodRandom")
+var searchFood=document.querySelector("#search_food")
+var errorMessage =document.querySelector("#error_message")
+var mealResult=document.querySelector("#meal_result")
+
+function noBlankValue(){
+    document.querySelector(".mealResult").style.display = "none";
+    errorMessage.textContent ="Please enter something!"
+}
+// can't accept blank value
+addEventListener("click", function foodRandom(){
+    if   (!searchFood.value){
+        noBlankValue()
+    } else if (searchFood.value){
+        errorMessage.textContent ="";
+
+    fetch('https://api.edamam.com/api/recipes/v2?type=public&q='+searchFood.value+'&app_id=8753c07f&app_key=25bd1618a120d76adb83aa22d43f1e73')
+    .then(response => response.json())
+    .then(data => { //display data to user
+     
+        document.querySelector(".mealResult").style.display = "block";
+        document.querySelector("#meal_result").textContent = "Here is the Recipe:";
+        document.querySelector("#meal_result").style.background = "orange";
+        
+        if (searchFood.value === "chicken"){
+        errorMessage.textContent = searchFood.value;
+        errorMessage.style.background = "green";
+        recipeFound()
+        }  else if (searchFood.value != "chicken"){
+            errorMessage.style.background = "red";
+        noRecipe();
+ }
+
+//
+function noRecipe(){
+    document.querySelector(".mealResult").style.display = "none";
+    errorMessage.textContent ="Sorry! Recipe not found!"
+}
+
+//
+function recipeFound(){
+    for (i = 0; i < 5 ; i++){
+        console.log(data[i]);
+        console.log(JSON.stringify(data))
+    }  
+}
+
+
+    }); //(replace console.log with code to show )
+}
+
+//
+})
+// END OF FOOD SEARCH CODES
+
+
+
+
+
+
+
+
+
+
+/* drink */
+async function getText(file) {
+    let myObject = await fetch(file);
+    let myText = await myObject.text();
+    myDisplay(myText);
+      }
+
+    var button_drinkRandom=document.querySelector("#drinkRandom").addEventListener("click", function drinkRandom(){
+        fetch("https://www.thecocktaildb.com/api/json/v2/9973533/random.php")
+        .then(response => response.json())
+        .then(data => { //display data to user
+            console.log(data)
+            createMeal(res.meals[0]);
+
+        
+        }); //(replace console.log with code to show )
+    })
+
+
+
+
+
+
+
+
+
+    
+    // search button to interact with user, create a loading button , 
+
+    // $ajax $get
+
+    // var displayRecipes = function(recipes, searchTerm) {
+    //     console.log(recipes);
+    //     console.log(searchTerm);
+    //   };

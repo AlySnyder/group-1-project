@@ -1,0 +1,98 @@
+body  {
+    background-image: url("https://images.pexels.com/photos/1484516/pexels-photo-1484516.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-color: #cccccc;
+    background-size: cover;
+  }
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    size: 100px;
+  }
+  
+  .box div {
+    width: 100px;
+    height: 100px;
+  }
+
+  .box h1 {
+      font-size: 80px;
+      color: orange;
+      text-shadow: 2px 4px black;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .box h2 {
+    font-size: 35px;
+    color: white;
+    border-bottom: 1px solid red ;
+}
+
+.button-wrap {
+    width: 400px;
+
+}
+
+.mealResult{
+  display:none;
+  width:800px;
+ background:white;
+ margin: 0 auto;
+height:400px;
+padding:40px;
+color: rgb(3, 0, 0);
+text-align: center;
+}
+
+.meal_result{
+  display:none;
+  width:800px;
+ background:white;
+ margin: 0 auto;
+height:400px;
+padding:40px;
+color: black;
+}
+
+
+
+.nameDisplay2{
+  display:none;
+  width:800px;
+ background:white;
+ margin: 0 auto;
+height:400px;
+padding:40px;
+color: black;
+}
+
+
+
+#error_message{
+  margin: 0 auto;
+  color:orange;
+  text-align: center;
+  font-size: 40px;
+}
+
+#btn2{
+display:none;
+}
+
+ 
+
+
+#health_labels, #cuisine_type,  #recipeFound, #ingredientLines , #url, #calories, #image,#source,#mealType, #diet_labels{ 
+  display:none;
+  width:800px;
+ background:white;
+ margin: 0 auto;
+height:auto;
+padding:10px 40px 0 40px;
+color: black;
+text-align: left;
+size: 20px;
+}
