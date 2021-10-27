@@ -1,0 +1,106 @@
+body  {
+    background-image: url("https://images.pexels.com/photos/1484516/pexels-photo-1484516.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-color: #cccccc;
+    background-size: cover;
+  }
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    size: 100px;
+  }
+  
+
+  .box h2 {
+    font-size: 35px;
+    color: white;
+    border-bottom: 1px solid red ;
+}
+
+.button-wrap {
+    width: 400px;
+
+}
+
+
+.navbar-nav {
+  justify-content: end;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+}
+
+.drinkButton .foodButton {
+display: flex;
+justify-content: center;
+
+}
+
+
+.container {
+
+  padding-top: 0%;
+  
+}
+
+
+.container h1 {
+  font-size: 80px;
+  text-shadow: 5px 5px #fcc201;
+
+}
+
+.text1 {
+  font-size: 80px;
+  text-shadow: 5px 5px #fcc201;
+  margin-left: 25%;
+}
+
+.text2 {
+  font-size: 30px;
+  margin-left: 5%;
+  
+}
+
+.container2 {
+margin-left: 20%;
+  
+}
+
+img {
+  
+  border: white solid 2px;
+}
+
+
+
+ #search_drink {
+  width: 460px;
+padding-left: 40px;
+margin-left: 29%;
+background: white;
+height: 60px;
+}
+
+#health_labels, #cuisine_type,  #recipeFound, #ingredientLines , #url, #calories, #image,#source,#mealType, #diet_labels, #drinkImage, #drinkType, #drinkTag{ 
+  display:none;
+  width:800px;
+ background:white;
+ margin: 0 auto;
+height:auto;
+padding:10px 40px 0 40px;
+color: black;
+text-align: left;
+size: 20px;
+}
+
+.chef {
+  margin-left: 24%;
+}
+
+
