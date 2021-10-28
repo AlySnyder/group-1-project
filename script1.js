@@ -50,6 +50,9 @@ button_foodRandom1.addEventListener("click", function foodRandom() {
                     var index = getRandomNumber(0, (data.hits.length - 1));
                     errorMessage.textContent = "Recipe for " + data.hits[index].recipe.label;
                     errorMessage.style.background = "black";
+                    errorMessage.style.fontSize = "30px";
+                    errorMessage.style.color = "white";
+                    errorMessage.style.textAlign = "center";
 
                     recipeFound.style.display = "block";
                     recipeFound.innerHTML = "<b>Recipe Label: </b> " + data.hits[index].recipe.label;
@@ -84,8 +87,9 @@ button_foodRandom1.addEventListener("click", function foodRandom() {
 
                     image.style.display = "block";
                     image.innerHTML = data.hits[index].recipe.image;
-                    image.innerHTML = ` <img src="${data.hits[index].recipe.image}" width="700px"  /> `;
+                    image.innerHTML = ` <img src="${data.hits[index].recipe.image}" width="500px"  /> `;
                     image.style.background = "white";
+                    image.style.textAlign = "center";
 
                     mealType.style.display = "block";
                     mealType.innerHTML = "<b>Meal Type: </b> " + data.hits[index].recipe.mealType;
@@ -169,6 +173,9 @@ button_drinkRandom.addEventListener("click", function drinkRandom() {
                     var index = getRandomNumber(0, (data.drinks.length - 1));
                     errorMessage.textContent = "Recipe for " + data.drinks[index].strDrink;
                     errorMessage.style.background = "black";
+                    errorMessage.style.fontSize = "30px";
+                    errorMessage.style.color = "white";
+                    errorMessage.style.textAlign = "center";
                                         //do we need id?
                     recipeFound.style.display = "block";
                     recipeFound.innerHTML = "<b>Recipe Label: </b> " + data.drinks[index].strCategory;
@@ -184,6 +191,10 @@ button_drinkRandom.addEventListener("click", function drinkRandom() {
                     image.innerHTML = data.drinks[index].strDrinkThumb;
                     image.innerHTML = ` <img src="${data.drinks[index].strDrinkThumb}" width="500px"  /> `;
                     image.style.background = "white";
+                    image.style.textAlign = "center";
+
+
+
 
                     // mealType.style.display = "block";
                     // mealType.innerHTML = "<b>Meal Type: </b> " + data.hits[index].recipe.mealType;
@@ -191,9 +202,9 @@ button_drinkRandom.addEventListener("click", function drinkRandom() {
 
 
 
-                    // url.style.display = "block";
-                    // url.innerHTML = "<b>URL:  </b>" + data.hits[index].recipe.url;
-                    // url.style.background = "white";
+                    url.style.display = "block";
+                    url.innerHTML = "<b>Drink Recipe</b>" + data.drinks[index].strInstructions;
+                    url.style.background = "white";
 
 
                     // source.style.display = "block";
@@ -208,10 +219,10 @@ button_drinkRandom.addEventListener("click", function drinkRandom() {
 })
 // function for random number generator
 
-function getRandomNumber(min, max) {
-    var first = max - min + 1;
-    var second = Math.random() * first;
-    var result = Math.floor(second) + min;
-    return result;
-}
+// function getRandomNumber(min, max) {
+//     var first = max - min + 1;
+//     var second = Math.random() * first;
+//     var result = Math.floor(second) + min;
+//     return result;
+// }
 
