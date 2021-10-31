@@ -2,6 +2,7 @@ body  {
     background-image: url("https://images.pexels.com/photos/1484516/pexels-photo-1484516.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
     background-color: #cccccc;
     background-size: cover;
+    
   }
 
 .box {
@@ -102,5 +103,6 @@ size: 20px;
 .chef {
   margin-left: 24%;
 }
+
 
 
