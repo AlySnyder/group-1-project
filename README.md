@@ -1,4 +1,4 @@
-  # group-1-project
+  # Group Project: Chef Bartender
 
 ## Group Members
 
@@ -6,5 +6,8 @@
 2. Jonacin Pierre-Louis
 3. Ashley Zavala
 4. Matt Arnett 
+
+
+
 
 

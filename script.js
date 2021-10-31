@@ -6,10 +6,6 @@ var button_foodRandom=document.querySelector(".foodRandom").addEventListener("cl
         console.log(JSON.stringify(data))
     }); //(replace console.log with code to show )
 })
-var button_drinkRandom=document.querySelector(".drinkRandom").addEventListener("click", function drinkRandom(){
-alert("testing2")
-    })
-
 async function getText(file) {
     let myObject = await fetch(file);
     let myText = await myObject.text();
@@ -24,6 +20,8 @@ async function getText(file) {
             console.log(data)
         }); //(replace console.log with code to show )
     })
+
+    
 
     // search button to interact with user, create a loading button , 
 
