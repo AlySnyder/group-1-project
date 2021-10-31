@@ -8,87 +8,98 @@
   <link rel="stylesheet" href="./assets/css/style1.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
   <title>Chef Bartender</title>
 </head>
 
-<body>
 
-  <div class="container">
-    <div class="title row text-white d-flex">
-      <div class="container2 ">
-        <img class="chef" src="./assets/images/chef.jpg" width="100" height="100" />
-       
-      </div>
-       <text class="text1">
-          Chef Bartender
-        </text>
-      <text class="text2">
-        Choose an ingredient here and we will provide a list of recipes for food or drink.
-      </text>
+
+<body class=".container.is-max-desktop hero is-fullheight  is-mobile  container-fluid ">
+
+
+
+<!-- pt-8 mt-8   -->
+  <section class="section columns is-medium is-flex-direction-column is-align-items-center is-mobile ">
+    <div class="">
+      <img class="" src="./assets/images/chef.jpg" width="100" height="100" />
+    </div>
+    <p>
+      <text class="text1">Chef Bartender</text><br>
+    </p>
+
+    <text class="text2">
+      Choose an ingredient and we will provide a list of recipes for food or drink.
+    </text>
+  </div>
+
+<section style="height: 45px;">
+
+</section>
+
+  <section class="columns  is-justify-content-flex-start is-centered is-mobile">
+
+    <div class="field is-grouped">
+
+
+
+
+      <p class="control">
+        <button id="foodRandom" class="is-link btn foodRandom btn-lg btn-lg btn-warning">Random Food Recipe!</button>
+      </p>
+
+
+
+
+      <p class="control">
+        <button id="drinkRandom" class="is-link btn foodRandom btn-lg btn-warning">Random Drink Recipe</button>
+      </p>
     </div>
 
-    <div class="row justify-content-center boxes">
+    
+  </section>
+<section style="height: 20px;">
 
-      <div class="row col-md-3">
-        <div class="">
-          <div class="card-body">
-          
-            <button id="foodRandom" class="btn foodRandom btn-lg btn-lg btn-warning">Random Food Recipe!</button>
-            
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row col-md-3">
-        <div class="">
-          <div class="card-body">
-            
-            <button id="drinkRandom" class="btn foodRandom btn-lg btn-warning">Random Drink Recipe</button>
-           
-            
-          </div>
-        </div>
-
-       
-        
-     
-
-      </div>
+</section>
+  
+<div class="columns is-mobile">
+      <input id="search_drink" type="search">
     </div>
 
 
-    
-<input  id ="search_drink" type="search">
-        <!-- start --> 
-<div id="error_message" class="card-title"></div> 
-<div id="mealType"></div>
-<div id="drinkType"></div>
-<div id="drinkTag"></div> 
-<div id="drinkImage"></div>
-<div id="drinkRecipe"></div>
-<div id="recipeFound"></div>
-<div id="image"></div> 
-<div id="cuisine_type"></div> 
-<div id="health_labels"></div> 
-<div id="diet_labels"></div> 
-<div id="ingredientLines"></div> 
-<div id="calories"></div> 
 
-<div id="source"></div> 
-<div id="url"></div> 
+  <!-- start -->
+
+  <section class="is-mobile">
+    <div id="error_message" class="card-title"></div>
+    <div id="mealType"></div>
+    <div id="drinkType"></div>
+    <div id="drinkTag"></div>
+    <div id="drinkImage"></div>
+    <div id="drinkRecipe"></div>
+    <div id="recipeFound"></div>
+    <div id="image"></div>
+    <div id="cuisine_type"></div>
+    <div id="health_labels"></div>
+    <div id="diet_labels"></div>
+    <div id="ingredientLines"></div>
+    <div id="calories"></div>
+
+    <div id="source"></div>
+    <div id="url"></div>
 
 
-<div id="mealResult" class="card-title">
- 
-    
-</div> 
+    <div id="mealResult" class="card-title">
+
+  </section>
+
+  </div>
 
 
   </div>
- 
+<!-- <section style="height: 50px;">
+
+</section> -->
   <script src="script1.js"></script>
 </body>
 

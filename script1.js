@@ -31,11 +31,36 @@ function noBlankValue() {
     errorMessage.style.background = "red";
     errorMessage.style.fontSize = "30px";
 }
+
+
+
+// Placing this b4 fetch api.     Local Storage Function
+function recentSearch(search) {
+    // Exsisting Search => gets array of past searches from localstorage
+    var existingSearch = JSON.parse(localStorage.getItem("searchHistory"))
+    // if null(not exsisting search) create array, set to local storage
+    if (!existingSearch) {
+        var searchArray = [search]
+        localStorage.setItem("searchHistory", JSON.stringify(searchArray))
+  
+    } 
+
+    // else adds new search to existing searches
+    // saves into local storage
+    else {
+        existingSearch.push(search)
+        localStorage.setItem("searchHistory", JSON.stringify(existingSearch))
+    }
+}
+
+
+
 // if input value is blank, execute the function and  display error message back to user , otherwise  enter something and get api value
 button_foodRandom1.addEventListener("click", function foodRandom() {
     if (!searchdrink.value) {
         noBlankValue()
     } else if (searchdrink.value) {
+        recentSearch(searchdrink.value)
         errorMessage.textContent = "";
         fetch('https://api.edamam.com/api/recipes/v2?type=public&q=' + searchdrink.value + '&app_id=8753c07f&app_key=25bd1618a120d76adb83aa22d43f1e73')
             .then(response => response.json())
@@ -154,13 +179,22 @@ function noBlankValue() {
     errorMessage.style.background = "red";
     errorMessage.style.fontSize = "30px";
 }
+
+
+
+
+
+
+
 // if input value is blank, execute the function and  display error message back to user , otherwise  enter something and get api value
 button_drinkRandom.addEventListener("click", function drinkRandom() {
     if (!searchdrink.value) {
         noBlankValue()
+        
     } else if (searchdrink.value) {
+        recentSearch(searchdrink.value)
         errorMessage.textContent = "";
-        fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s='+searchdrink.value)
+        fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' + searchdrink.value)
             .then(response => response.json())
             .then(data => {
                 console.log(data)
@@ -176,7 +210,7 @@ button_drinkRandom.addEventListener("click", function drinkRandom() {
                     errorMessage.style.fontSize = "30px";
                     errorMessage.style.color = "white";
                     errorMessage.style.textAlign = "center";
-                                        //do we need id?
+                    //do we need id?
                     recipeFound.style.display = "block";
                     recipeFound.innerHTML = "<b>Recipe Label: </b> " + data.drinks[index].strCategory;
                     recipeFound.style.background = "white";
@@ -193,36 +227,17 @@ button_drinkRandom.addEventListener("click", function drinkRandom() {
                     image.style.background = "white";
                     image.style.textAlign = "center";
 
-
-
-
-                    // mealType.style.display = "block";
-                    // mealType.innerHTML = "<b>Meal Type: </b> " + data.hits[index].recipe.mealType;
-                    // mealType.style.background = "white";
-
-
-
                     url.style.display = "block";
                     url.innerHTML = "<b>Drink Recipe</b>" + data.drinks[index].strInstructions;
                     url.style.background = "white";
 
-
-                    // source.style.display = "block";
-                    // source.innerHTML = "<b>source:  </b>" + data.hits[index].recipe.source;
-                    // source.style.background = "white";
                 }
 
-            }); //(replace console.log with code to show )
+            }); 
     }
 
-    //
+    
 })
-// function for random number generator
 
-// function getRandomNumber(min, max) {
-//     var first = max - min + 1;
-//     var second = Math.random() * first;
-//     var result = Math.floor(second) + min;
-//     return result;
-// }
+
 
